@@ -243,6 +243,8 @@ def parse_html_files(directory, title_css, date_css, tags_css, companies_css, or
 
 # Streamlit UI
 st.title("Web Scraping and Parsing Application")
+st.write("This application scrapes articles from Commercial Search's website for various asset types (Office, Industrial, Retail, etc.). Users can specify the number of pages to scrape and where to save the HTML files. The scraper extracts article links, downloads their content, and stores them locally for further analysis.")
+
 
 # Dropdown for base URL selection
 selected_category = st.selectbox("Choose a category to scrape:", list(BASE_URLS.keys()))
